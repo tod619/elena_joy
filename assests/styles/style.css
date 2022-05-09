@@ -35,15 +35,15 @@ html {
     --special-color: #906272;
     --background-color: #414141;
     --gray-text: #525252;
-
 }
 
 body {
-    font-family: 'Ruhl';
+    font-family: 'Ruhl', sans-serif;
 }
 
 h1 {
     font-size: var(--header1);
+    font-family: 'Vibes', sans-serif;
 }
 
 h2 {

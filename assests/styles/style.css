@@ -161,7 +161,8 @@ nav {
   z-index: -1;
   transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
   transform-origin: bottom;
-  animation: plant-entrance 1.5s ease-in-out 0.75s forwards;
+  animation: plant-entrance 1.5s ease-in-out 0.75s forwards,
+    plant-shake 2.5s infinite ease-in-out alternate-reverse 2s;
 }
 
 .plant-2 {
@@ -187,6 +188,16 @@ nav {
 
   to {
     transform: translateY(0) rotateZ(0) rotateX(0);
+  }
+}
+
+@keyframes plant-shake {
+  from {
+    transform: rotateZ(-5deg);
+  }
+
+  to {
+    transform: rotateZ(0);
   }
 }
 

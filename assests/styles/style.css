@@ -168,6 +168,7 @@ nav {
   transform-origin: bottom;
   animation: plant-entrance 1.5s ease-in-out 0.75s forwards,
     plant-shake 2.5s infinite ease-in-out alternate-reverse 2s;
+  max-height: 80%;
 }
 
 .plant-2 {
@@ -210,6 +211,14 @@ nav {
 
 /* Media Queries */
 @media screen and (max-width: 842px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero-introduction p {
+    padding: 5rem 3rem;
+  }
+
   .burger {
     display: block;
     position: relative;

@@ -280,7 +280,7 @@ nav {
 }
 
 .form-wrapper h2 {
-  margin-bottom: 3rem;
+  margin: 5rem 0;
 }
 
 .form-wrapper span {
@@ -314,6 +314,29 @@ nav {
   flex: 1 1 40rem;
 }
 /* End: Contact Section */
+
+/* Start: Footer */
+footer {
+  background: var(--background-color);
+  color: #fff;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+/* End: Footer */
 
 /* Start: Animations */
 @keyframes opening {
@@ -439,5 +462,19 @@ nav {
   .gallery img {
     grid-row: auto;
     grid-column: auto;
+  }
+
+  .contact img {
+    display: none;
+  }
+
+  footer ul {
+    order: 1;
+  }
+
+  footer h4 {
+    order: 2;
+    padding: 1rem;
+    text-align: center;
   }
 }
